@@ -73,11 +73,9 @@ function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardClick }) {
       <section className="elements">
         {cards.map((card) => (
           <Card
-            key={card.cardId}
-            name={card.name}
-            link={card.link}
-            likes={card.likes}
-            onCardClick={onCardClick}
+          key={card.cardId} 
+          card={card} 
+          onCardClick={onCardClick}
           />
         ))}
       </section>
