@@ -1,36 +1,3 @@
-import osetiaImage from '../images/СевернаяОсетия.jpg';
-import gijgitImage from '../images/ОзероГижгит.jpg';
-import cadargavanImage from '../images/Кадаргаван-min.jpg'
-import jeleznovodskImage from '../images/Железноводск-min.jpg';
-import kislovodskImage from '../images/Кисловодск-min.jpg';
-import cabardaImage from '../images/Кабардино-Балкария-min.jpg'
-
-const initialCards = [
-  {
-    name: "Северная\u00A0Осетия",
-    photo: osetiaImage,
-  },
-  {
-    name: "Озеро\u00A0Гижгит",
-    photo: gijgitImage,
-  },
-  {
-    name: "Кадаргаван",
-    photo: cadargavanImage,
-  },
-  {
-    name: "Железноводск",
-    photo: jeleznovodskImage,
-  },
-  {
-    name: "Кисловодск",
-    photo: kislovodskImage,
-  },
-  {
-    name: "Кабардино-Балкария",
-    photo: cabardaImage,
-  },
-];
 
 const validationConfig = {
   formSelector: ".popup__form",
