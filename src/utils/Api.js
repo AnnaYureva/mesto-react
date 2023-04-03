@@ -58,23 +58,13 @@
       body: JSON.stringify({ name: data.name, about: data.description }),
     });
   }
-
-  // “залайкать” карточку (PUT)
-  addLike(cardId) {
+ //лайки и дизлайки
+ changeLikeCardStatus(cardId, isLiked) {
     return this._request(`${this._url}/cards/${cardId}/likes`, {
-      headers: this._headers,
-      method: "PUT",
-    });
-  }
-
-  //удалить лайк карточки (DELETE)
-
-  deleteLike(cardId) {
-    return this._request(`${this._url}/cards/${cardId}/likes`, {
-      headers: this._headers,
-      method: "DELETE",
-    });
-  }
+        method: `${isLiked ? 'PUT' : 'DELETE'}`,
+        headers: this._headers,
+    })
+}
 
   //Сохранить аватар
 
